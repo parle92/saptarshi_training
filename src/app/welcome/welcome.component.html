@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
+<!-- <div class="container">
+  <div class="row"> -->
+    <div >
       <button class="btn btn-primary" (click) = "showWelcomeText = true"> Welcome me </button>
-      <p *ngIf="showWelcomeText"> Welcome {{ name }} 
-        <button class="btn btn-secondary" (click) = "showDetailsText = true"> Show Details </button>
-      </p>
+      <p *ngIf="showWelcomeText" style="margin-top: 15px"> Welcome {{ name }} </p>
+      <button class="btn btn-secondary" (click) = "showDetailsText = !showDetailsText" *ngIf="showWelcomeText"> Show Details </button>
+      
       <app-my-details *ngIf="showDetailsText"></app-my-details>
     </div>
-  </div>
-</div>
+   <!-- </div>
+</div> -->
