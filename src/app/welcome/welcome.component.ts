@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  
+  name = "Saptarshi"
+  showWelcomeText = false;
+  showDetailsText = false;
 
   constructor() { }
 
